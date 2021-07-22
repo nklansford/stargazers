@@ -1,0 +1,20 @@
+{
+  "name": "Stargazers",
+  "version": "1.0.0",
+  "description": "A Sparkbox Exercise",
+  "homepage": "https://github.com/nklansford/stargazers",
+  "main": "src/index.html",
+  "scripts": {
+    "sync": "browser-sync start -s \"src\" -f \"src/**/*.*\"",
+    "sass": "node-sass -w --include-path='src/scss' --source-map=true src/styles.scss src/styles.css",
+    "start": "npm-run-all -p sync sass",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Noelle Lansford",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.4",
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
