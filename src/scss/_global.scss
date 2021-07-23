@@ -1,3 +1,16 @@
-body{
-  background-color: $primary-color;
+html{
+
+  body{
+    background-color: $primary-color;
+    background-image: url(../assets/images/star-background.jpg);
+    background-blend-mode:luminosity;
+    background-repeat: repeat;
+    background-size: contain;
+    width: 90%;
+    margin: 0 auto;
+
+    #logo{
+      margin: 2rem 2rem 2rem 0;
+    }
+  }
 }

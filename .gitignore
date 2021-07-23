@@ -2,3 +2,4 @@ node_modules
 *.css
 *.css.map
 package-lock.json
+.DS_Store
