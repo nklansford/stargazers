@@ -1,21 +1,32 @@
 body{
   color: $body-color;
+
   h1{
     font-family: $font-famiy-label;
     font-weight: $font-weight-normal;
     font-size: $font-size-h1;
   }
+
   h3{
     font-size: $font-size-h3;
     font-family: $font-famiy-label;
     font-weight: $font-weight-normal;
+    // @include tablet{
+    //   font-size: $font-size-h3-tablet;
+    // }
+    // @include desktop-and-up{
+    //   font-size: $font-size-h3-desktop;
+    // }
   }
+
   p{
     font-family: $font-family-body;
   }
+
   #logo{
     font-size: $font-size-h1;
   }
+
   .header-content__lead-in{
     font-size: $font-size-cta;
   }

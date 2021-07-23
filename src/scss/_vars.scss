@@ -7,9 +7,16 @@ $font-weight-bold: bold;
 $font-size-body: 2.5rem;
 $font-size-h1: 4rem;
 $font-size-h2: 3.75rem;
+////h3
 $font-size-h3: 3.5rem;
+$font-size-h3-tablet: 2.5rem;
+$font-size-h3-desktop: 2rem;
 $font-size-cta: 3rem;
 
 //colors
 $primary-color: #0D192B;
 $body-color: #ffffff;
+
+//screen sizes
+$tablet-screen-size: 600px;
+$desktop-up-screen-size: 1200px;
