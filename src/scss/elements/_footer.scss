@@ -1,0 +1,13 @@
+footer{
+  background-color: $primary-color;
+  .footer-content{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0 1.5rem;
+    .footer-content__copyright{
+      font-size: $font-size-small;
+      font-style: italic;
+      text-align: center;
+    }
+  }
+}

@@ -1,27 +1,22 @@
 body{
   color: $body-color;
 
+h1, h2, h3, h4, h5, h6{
+  font-family: $font-family-label;
+  font-weight: $font-weight-normal;
+}
   h1{
     @include h1-responsive;
-    font-family: $font-famiy-label;
-    font-weight: $font-weight-normal;
+  }
+  h1{
+    @include h2-responsive;
   }
 
   h3{
     @include h3-responsive;
-    font-family: $font-famiy-label;
-    font-weight: $font-weight-normal;
   }
 
   p{
     font-family: $font-family-body;
-  }
-
-  #logo{
-    @include h1-responsive;
-  }
-
-  .header-content__lead-in{
-    font-size: $font-size-cta;
   }
 }

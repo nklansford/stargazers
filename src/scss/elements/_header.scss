@@ -1,0 +1,14 @@
+header{
+  width: 90%;
+  margin: 0 auto;
+
+  #logo{
+    @include h1-responsive;
+    margin: 2rem 2rem 2rem 0;
+  }
+  .header-content{
+    .header-content__lead-in{
+      font-size: $font-size-cta;
+    }
+  }
+}

@@ -16,6 +16,15 @@
     font-size: $font-size-h1-desktop;
   }
 }
+@mixin h2-responsive{
+  font-size: $font-size-h2;
+  @include tablet{
+    font-size: $font-size-h2-tablet;
+  }
+  @include desktop-and-up{
+    font-size: $font-size-h2-desktop;
+  }
+}
 
 @mixin h3-responsive{
   font-size: $font-size-h3;
