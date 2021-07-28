@@ -1,6 +1,35 @@
-// @mixin tablet {
-//   @media screen and (min-width: $tablet-screen-size){ @content; }
-// }
-// @mixin desktop-and-up {
-//   @media screen and (min-width: $desktop-up-screen-size){ @content; }
-// }
+//General media query
+@mixin tablet {
+  @media screen and (min-width: $tablet-screen-size){ @content; }
+}
+@mixin desktop-and-up {
+  @media screen and (min-width: $desktop-up-screen-size){ @content; }
+}
+
+//Responsive type
+@mixin h1-responsive{
+  font-size: $font-size-h1;
+  @include tablet{
+    font-size: $font-size-h1-tablet;
+  }
+  @include desktop-and-up{
+    font-size: $font-size-h1-desktop;
+  }
+}
+
+@mixin h3-responsive{
+  font-size: $font-size-h3;
+  @include tablet{
+    font-size: $font-size-h3-tablet;
+  }
+  @include desktop-and-up{
+    font-size: $font-size-h3-desktop;
+  }
+}
+
+//Effects
+@mixin box-glow-effect {
+  background: $overlay-color--light;
+  color: $body-color;
+  box-shadow: $box-outer-glow;
+}

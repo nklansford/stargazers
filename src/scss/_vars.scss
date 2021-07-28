@@ -5,18 +5,27 @@ $font-weight-light: thin;
 $font-weight-normal: normal;
 $font-weight-bold: bold;
 $font-size-body: 2.5rem;
-$font-size-h1: 4rem;
-$font-size-h2: 3.75rem;
+////lead-in
+$font-size-cta: 1.5rem;
+$font-size-cta-tablet: 2rem;
+$font-size-cta-desktop: 2.5rem;
+////h1
+$font-size-h1: 2rem;
+$font-size-h1-tablet: 2.5rem;
+$font-size-h1-desktop: 2.75rem;
 ////h3
-$font-size-h3: 3.5rem;
-$font-size-h3-tablet: 2.5rem;
+$font-size-h3: 1.5rem;
+$font-size-h3-tablet: 1.75rem;
 $font-size-h3-desktop: 2rem;
-$font-size-cta: 3rem;
 
 //colors
-$primary-color: #0D192B;
 $body-color: #ffffff;
+$box-outer-glow-color: rgba(255, 255, 255, .2);
+$box-outer-glow: -12px 6px 23px 6px $box-outer-glow-color;
+$overlay-color: rgba(13, 25, 43, 0.82);
+$overlay-color--light: rgba(255, 255, 255, 0);
+$primary-color: #0D192B;
 
-//screen sizes
+//breakpoints
 $tablet-screen-size: 600px;
 $desktop-up-screen-size: 1200px;
