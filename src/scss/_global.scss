@@ -1,5 +1,4 @@
 html{
-
   body{
     background-color: $primary-color;
     background-image: url(../assets/images/star-background.jpg);
@@ -7,10 +6,8 @@ html{
     background-repeat: repeat;
     background-size: contain;
     margin:0;
-
     main{
-      width: 90%;
-      margin: 0 auto;
+      @include site-spacing;
     }
   }
 }

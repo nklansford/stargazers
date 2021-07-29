@@ -1,3 +1,9 @@
+//General
+@mixin site-spacing{
+  width: $site-width;
+  margin: $site-margin;
+}
+
 //General media query
 @mixin tablet {
   @media screen and (min-width: $tablet-screen-size){ @content; }

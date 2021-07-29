@@ -1,13 +1,24 @@
 footer{
   background-color: $primary-color;
+  display: flex;
+  flex-flow: row wrap;
   .footer-content{
-    width: 90%;
+    width: $site-width;
     margin: 0 auto;
     padding: 1rem 0 1.5rem;
-    .footer-content__copyright{
-      font-size: $font-size-small;
-      font-style: italic;
-      text-align: center;
+    .footer-content__body{
+      line-height: 1.5rem;
     }
+    @include desktop-and-up{
+      width: 40%;
+    }
+  }
+  .copyright{
+    font-size: $font-size-small;
+    font-style: italic;
+    text-align: center;
+    padding: 1rem;
+    margin:0;
+    width: 100%;
   }
 }
