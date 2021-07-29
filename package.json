@@ -8,7 +8,12 @@
     "sync": "browser-sync start -s \"src\" -f \"src/**/*.*\"",
     "sass": "node-sass -w --include-path='src/scss' --source-map=true src/styles.scss src/styles.css",
     "start": "npm-run-all -p sync sass",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:sass": "node-sass --include-path='src/scss' src/styles.scss build/styles.css",
+    "build:html": "cp src/index.html build",
+    "build:assets": "cp -r src/assets build",
+    "build:dir": "mkdir build",
+    "build": "npm-run-all build:dir build:sass build:assets build:html"
   },
   "author": "Noelle Lansford",
   "license": "ISC",
