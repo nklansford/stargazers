@@ -6,7 +6,6 @@ ul.locations-list{
   justify-content: space-evenly;
    li.locations-list__location{
     margin: 1rem 0;
-    background-image: url(../../assets/images/sahara.jpg);
     background-size: cover;
     border-radius: 50%;
     a.location__name {
@@ -39,5 +38,29 @@ ul.locations-list{
         @include box-glow-effect;
       }
     }
+  }
+  .location--sahara{
+    background-image: url(../../assets/images/sahara.jpg);
+  }
+  .location--moena{
+    background-image: url(../../assets/images/moena.jpg);
+  }
+  .location--nanjizal{
+    background-image: url(../../assets/images/nanjizal.jpg);
+  }
+  .location--rockies{
+    background-image: url(../../assets/images/rockies.jpg);
+  }
+  .location--rye{
+    background-image: url(../../assets/images/rye.jpg);
+  }
+  .location--yosemite{
+    background-image: url(../../assets/images/yosemite.jpg);
+  }
+  .location--key-summit{
+    background-image: url(../../assets/images/key-summit.jpg);
+  }
+  .location--mammoth-lakes{
+    background-image: url(../../assets/images/mammoth-lakes.jpg);
   }
 }
