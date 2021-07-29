@@ -15,3 +15,12 @@
  4. Run `npm install` to install all other dependencies from the `package.json` file.
  5. Run `npm run build`. This will copy all the necessary files to the build directory.
  6. For a live refresh environment, use `npm start`
+
+
+## :thought_balloon: Rationale :thought_balloon:
+- HTML is in standard document format with BEM class naming convention. I use BEM because it easily organizes where you are within an element and eliminates the need to rely heavily on broad specificity rules for specific elements.
+
+- CSS is using Sass where `styles.scss` is used for imports, `global.scss` is used for universal styles, `vars.scss` and `mixins.scss` are used respectively and `type.scss` is used for all type rules and then from there the files are broken out by element.
+  - I use variables as a way to master control rogue styles. I see it as my master list of values that I keep track of in one spot (ah, the beauty of Sass). Another rule of thumb is if I use it twice (or think I will in any future instance), it should be a variable.
+
+  - I use mixins as a step up from variables for that same master control but with blocks of code. In this project, I also used it for various responsive setups.
