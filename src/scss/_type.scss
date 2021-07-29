@@ -1,0 +1,22 @@
+body{
+  color: $body-color;
+
+h1, h2, h3, h4, h5, h6{
+  font-family: $font-family-label;
+  font-weight: $font-weight-normal;
+}
+  h1{
+    @include h1-responsive;
+  }
+  h1{
+    @include h2-responsive;
+  }
+
+  h3{
+    @include h3-responsive;
+  }
+
+  p{
+    font-family: $font-family-body;
+  }
+}

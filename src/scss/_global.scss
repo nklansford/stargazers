@@ -1,0 +1,12 @@
+html{
+  body{
+    background-color: $primary-color;
+    background-blend-mode:luminosity;
+    background-repeat: repeat;
+    background-size: contain;
+    margin:0;
+    main{
+      @include site-spacing;
+    }
+  }
+}

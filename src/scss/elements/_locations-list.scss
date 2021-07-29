@@ -1,0 +1,42 @@
+ul.locations-list{
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+   li.locations-list__location{
+    margin: 1rem 0;
+    background-size: cover;
+    border-radius: 50%;
+    a.location__name {
+      @include h3-responsive;
+      padding-left: 0;
+      background: $overlay-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-family: $font-family-label;
+      text-align: center;
+      text-decoration: none;
+      color: darken($body-color, 20%);
+      transition: 0.5s ease;
+      width: 40vw;
+      height: 40vw;
+      @include tablet{
+        width: 25vw;
+        height: 25vw;
+      }
+      @include desktop-and-up{
+        width: 20vw;
+        height: 20vw;
+      }
+      &:hover{
+        @include box-glow-effect;
+      }
+      &:active{
+        @include box-glow-effect;
+      }
+    }
+  }
+}
